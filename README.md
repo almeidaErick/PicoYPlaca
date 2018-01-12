@@ -16,14 +16,19 @@ RUNNING THE PROGRAM:
   * The date format is: DD-MM-YYYY. The hour format is: HH:MM.
   
 Example 1.
+
   ./picoyplaca pcb2345 12-12-2018 12:35
   
   OUTPUT
   
   ----YOUR CAR CAN BE ON THE ROAD, ENJOY----
+  
   Plate Number: pcb2345
+  
   Date: 12-12-2018
+  
   Day: Wednesday
+  
   Hour: 12:35
   
 Example 2.
@@ -33,9 +38,13 @@ Example 2.
   OUTPUT
   
   ----SORRY YOUR CAR CAN NOT BE ON THE ROAD----
+  
   Plate Number: pcb2341
+  
   Date: 10-12-2018
+  
   Day: Monday
+  
   Hour: 9:20
   
   
@@ -56,10 +65,15 @@ Example 3.
   OUTPUT
   
   Bad format date: 01-12/2018, should be in the format dd-mm-yyyy
+  
   programTesting.c:8:test_CorrectDate:FAIL: Expected 0x01 Was 0x00
+  
   Incorrect hour (HH:MM), please check: 12:85
+  
   programTesting.c:17:test_CorrectHour:FAIL: Expected 0x01 Was 0x00
+  
   The first 3 characters of the plate must be letters, bad format of the vehicle's plate number: P1B2534
+  
   programTesting.c:26:test_CorrectPlateNumber:FAIL: Expected 0x01 Was 0x00
 
   -----------------------
